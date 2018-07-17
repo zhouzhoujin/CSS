@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input{
+            width: 100px;
+            height: 20px;
+            color: #000000;
+            background: white;
+            border: 1px solid black;
+        }
+        #learn div{
+            height: 30px;
+        }
+        /*input[type="password"]{*/
+            /*background: #000;*/
+        /*}*/
+
+        /*h3 + input{*/
+            /*background: darkred;*/
+        /*}*/
+
+        /*h3 ~input{*/
+            /*background: orangered;*/
+        /*}*/
+
+        /*input[type]{*/
+            /*background: yellow;*/
+        /*}*/
+
+        /*div[class~="a"]{*/
+            /*background: yellow;*/
+        /*}*/
+
+        /*div[class^="a"]{*/
+            /*background: aqua;*/
+        /*}*/
+
+        /*div[class$="b"]{*/
+            /*background: green;*/
+        /*}*/
+
+        /*div[class*="a"]{*/
+            /*background: orange;*/
+        /*}*/
+
+        /*div[class|="a"]{*/
+            /*background: aqua;*/
+        /*}*/
+
+        /*#learn .aa:focus{*/
+            /*background: yellow;*/
+        /*}*/
+
+        /*#learn div:not(.a-c){*/
+            /*border: 2px solid red;*/
+        /*}*/
+
+        /*#learn div:first-child{*/
+            /*background: orange;*/
+        /*}*/
+
+        /*#learn div:last-child{*/
+            /*background: red;*/
+        /*}*/
+        /*h3:only-child{*/
+            /*background: darkred;*/
+        /*}*/
+        /*div:nth-child(2n){*/
+            /*background: orange;*/
+        /*}*/
+
+        /*div:nth-last-child(1){*/
+            /*background: aqua;*/
+        /*}*/
+
+        /*#learn div:first-of-type{*/
+            /*background: red;*/
+        /*}*/
+        /*h3:only-of-type{*/
+            /*background: aqua;*/
+        /*}*/
+
+        /*input:nth-of-type(1){*/
+            /*background: black;*/
+        /*}*/
+        /*div:empty{*/
+            /*background: red;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <div id="learn">
+        <div class="a b">01</div>
+        <div class="b">02</div>
+        <div class="a"></div>
+        <div class="a-c">04</div>
+        <div class="abc">05</div>
+    </div>
+    <div>
+        <div>2</div>
+        <h3>learn</h3>
+        <div>3</div>
+    </div>
+        <input type="password" class="aa">
+        <div>
+            01
+        </div>
+        <input type="text" class="bb">
+        <input type="text" class="cc">
+</body>
+</html>
