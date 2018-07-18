@@ -11,8 +11,27 @@
             background: white;
             border: 1px solid black;
         }
+        body{
+            height: 3500px;
+        }
         #learn div{
-            height: 30px;
+            height: 500px;
+           
+        }
+        #a{
+            background: red;
+        }
+        #b{
+            background: #dddddd;
+        }
+        #abc{
+            background: #ff6600;
+        }
+        #a-c{
+            background: aqua;
+        }
+        #learn #a:target{
+            background: yellow;
         }
         /*input[type="password"]{*/
             /*background: #000;*/
@@ -92,12 +111,19 @@
     </style>
 </head>
 <body>
+    <div>
+        <a href="#b">div2</a>
+        <a href="#a">div3</a>
+        <a href=" #a-c">div4</a>
+        <a href="#abc">div5</a>
+
+    </div>
     <div id="learn">
-        <div class="a b">01</div>
-        <div class="b">02</div>
-        <div class="a"></div>
-        <div class="a-c">04</div>
-        <div class="abc">05</div>
+        <div id="a-b">01</div>
+        <div id="b">02</div>
+        <div id="a"></div>
+        <div id="a-c">04</div>
+        <div id="abc">05</div>
     </div>
     <div>
         <div>2</div>

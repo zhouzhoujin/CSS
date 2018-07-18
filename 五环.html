@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .c{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 10px solid;
+            position: absolute;
+        }
+        .c::after{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 10px solid;
+            position: absolute;
+        }
+
+        .c::after{
+            content:"";
+            top: -10px;
+            left: -10px;
+        }
+        .blue{
+            border-color: blue;
+            top: 0;
+            left: 0;
+        }
+        .blue::after{
+            border-color: blue;
+            z-index: 1;
+            border-bottom-color: transparent;
+        }
+        .black{
+            border-color: black;
+            top: 0;
+            left: 230px;
+        }
+        .black::after{
+            border-color: black;
+            border-left-color: transparent;
+
+            z-index: 1;
+        }
+        .red{
+            border-color: red;
+            top: 0;
+            left: 460px;
+        }
+        .red::after{
+            border-color: red;
+            border-left-color: transparent;
+            z-index: 2;
+        }
+        .yellow{
+            border-color: yellow;
+            top: 100px;
+            left: 100px;
+        }
+        .yellow::after{
+            border-color: yellow;
+            ;
+        }
+        .green{
+            border-color: green;
+            top: 100px;
+            left: 330px;
+        }
+        .green::after{
+            border-color: green;
+            border-top-color: transparent;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="c blue"></div>
+    <div class="c black"></div>
+    <div class="c red"></div>
+    <div class="c yellow"></div>
+    <div class="c green"></div>
+</body>
+</html>
